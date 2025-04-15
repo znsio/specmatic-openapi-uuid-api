@@ -31,7 +31,7 @@ services:
         condition: service_healthy
 
   contract-tests:
-    image: znsio/specmatic
+    image: znsio/specmatic-openapi
     volumes:
       - ./specmatic-uuid-api-test/build/reports:/usr/src/app/build/reports
       - ./specmatic-uuid-api-test/specmatic.yaml:/usr/src/app/specmatic.yaml
